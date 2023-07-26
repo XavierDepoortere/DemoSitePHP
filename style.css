@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --main-color: #049;
+  --text-color: #fff;
+  --shadow-color: #ccc;
+  --border-color: #ccc;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin:0;
+}
+
+header {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-size: 1.4rem;
+  padding: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.inset {
+  padding: 10px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.center {
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.mosaic {
+  width: 33%;
+}
+
+.mosaic img {
+  width: 100%;
+  height: 20vw; 
+  object-fit: cover;
+}
+
+.full {
+  width: 100%;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border-radius: 7px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+}
+
+.shadow {
+  box-shadow: 0 0 10px var(--shadow-color);
+}
+
+.fullsize {
+  display: flex;
+  min-height: calc(100vh - 56px);
+  align-items: center;
+  justify-content: center;
+}
+
+.half-witdh {
+  width: 50%;
+}
+
+.form-group {
+  margin: 10px;
+}
+
+.form-group *:last-child {
+  border: var(--border-color) solid 1px;
+  display: block;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .home {
+    flex-direction: column;
+  }
+  .mosaic {
+    width: 100%;
+  } 
+  .mosaic img {
+    height: 50vw;
+  }
+}
